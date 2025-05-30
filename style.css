@@ -208,3 +208,117 @@ footer {
     color: #f59e42;
     font-weight: 600;
 }
+
+.sobre {
+    padding: 64px 0 48px 0;
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.sobre-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.07);
+    padding: 48px 40px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.sobre-card h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #2563eb;
+}
+
+.sobre-card p {
+    font-size: 1.13rem;
+    color: #374151;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.contato {
+    padding: 64px 0 48px 0;
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.contato-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.07);
+    padding: 48px 40px;
+    max-width: 480px;
+    width: 90%;
+    text-align: center;
+}
+
+.contato-card h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    color: #2563eb;
+}
+
+.contato-card p {
+    font-size: 1.13rem;
+    color: #374151;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.form-contato label {
+    text-align: left;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 2px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    background: #f1f5f9;
+    transition: border 0.2s;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border: 1.5px solid #2563eb;
+    outline: none;
+    background: #fff;
+}
+
+.form-contato button.cta {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contato-info {
+    margin-top: 18px;
+    font-size: 1rem;
+    color: #374151;
+}
+
+.contato-info a {
+    color: #25D366;
+    text-decoration: underline;
+    font-weight: 600;
+}
