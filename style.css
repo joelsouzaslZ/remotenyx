@@ -44,41 +44,55 @@ nav a:hover {
     color: #50b8e7;
 }
 
-.hero {
-    background: linear-gradient(to right, #0a0f2c, #193f72);
-    color: white;
-    padding: 5rem 2rem;
-    text-align: center;
-    box-shadow: inset 0 0 60px rgba(0,0,0,0.3);
+.hero-primary, .hero-secundary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+    background: #f8fafc;
+}
+
+.hero-secundary {
+    background: #e6f0fa;
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.07);
+    padding: 48px 40px;
+    max-width: 540px;
+    width: 90%;
+    text-align: center;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.hero-content h1, .hero-content h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    color: #1a202c;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+.hero-content p {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+    color: #374151;
 }
 
 .cta {
-    background-color: #50b8e7;
+    display: inline-block;
+    background: #25D366;
     color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
     font-weight: 600;
-    transition: background 0.3s;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.2s;
 }
 
 .cta:hover {
-    background-color: #369bd1;
+    background: #128c4b;
 }
 
 footer {
@@ -88,4 +102,109 @@ footer {
     padding: 1.2rem;
     margin-top: 3rem;
     font-size: 0.9rem;
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    padding: 10px;
+    transition: box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-float:hover {
+    box-shadow: 0 8px 32px rgba(37,211,102,0.25);
+    background: #e6f9ef;
+}
+
+.servicos {
+    padding: 48px 0 32px 0;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.servicos h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 36px;
+    color: #1a202c;
+}
+
+.servicos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.servico-item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.07);
+    padding: 36px 28px 32px 28px;
+    max-width: 340px;
+    min-width: 260px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.servico-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(37,99,235,0.10);
+}
+
+.servico-icone {
+    margin-bottom: 18px;
+}
+
+.servico-item h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+.servico-item p {
+    font-size: 1.05rem;
+    color: #374151;
+    margin-bottom: 22px;
+}
+
+.cta {
+    display: inline-block;
+    background: #25D366;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.cta:hover:not(.disabled) {
+    background: #128c4b;
+}
+
+.cta.disabled {
+    background: #cbd5e1;
+    color: #64748b;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.breve {
+    font-size: 0.95em;
+    color: #f59e42;
+    font-weight: 600;
 }
