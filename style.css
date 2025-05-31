@@ -235,11 +235,61 @@ footer {
     color: #2563eb;
 }
 
+.sobre-card h2 {
+    font-size: 1.25rem;
+    color: #2563eb;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
 .sobre-card p {
     font-size: 1.13rem;
     color: #374151;
     margin-bottom: 18px;
     line-height: 1.6;
+}
+
+.sobre-valores, .sobre-diferenciais {
+    text-align: left;
+    margin: 0 auto 18px auto;
+    max-width: 480px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.sobre-valores li, .sobre-diferenciais li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #374151;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.sobre-valores li::before {
+    content: "★";
+    color: #f59e42;
+    position: absolute;
+    left: 0;
+    font-size: 1em;
+}
+
+.sobre-diferenciais li::before {
+    content: "✔";
+    color: #25D366;
+    position: absolute;
+    left: 0;
+    font-size: 1em;
+}
+
+.sobre-cta {
+    margin-top: 28px;
+}
+
+.sobre-cta .cta-desc {
+    margin-top: 10px;
+    color: #2563eb;
+    font-size: 1rem;
 }
 
 .contato {
@@ -312,13 +362,159 @@ footer {
 }
 
 .contato-info {
-    margin-top: 18px;
+    margin-top: 28px;
     font-size: 1rem;
     color: #374151;
+    text-align: left;
+}
+
+.contato-info h2 {
+    color: #2563eb;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .contato-info a {
     color: #25D366;
     text-decoration: underline;
     font-weight: 600;
+}
+
+.contato-destaque {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #e6f9ef;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin: 18px 0 24px 0;
+    font-weight: 600;
+    color: #128c4b;
+    justify-content: center;
+    font-size: 1.08rem;
+}
+
+.contato-destaque a {
+    color: #25D366;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.form-contato select {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    background: #f1f5f9;
+    transition: border 0.2s;
+}
+
+.form-contato select:focus {
+    border: 1.5px solid #2563eb;
+    outline: none;
+    background: #fff;
+}
+
+.contato-diferenciais {
+    margin-top: 32px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 20px 18px;
+    text-align: left;
+}
+
+.contato-diferenciais h2 {
+    color: #2563eb;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.contato-diferenciais ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.contato-diferenciais li {
+    margin-bottom: 8px;
+    padding-left: 1.2em;
+    position: relative;
+    color: #374151;
+    font-size: 1.03rem;
+}
+
+.contato-diferenciais li::before {
+    content: "✔";
+    color: #25D366;
+    position: absolute;
+    left: 0;
+    font-size: 1em;
+}
+
+.servico-detalhe {
+    padding: 64px 0 48px 0;
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.servico-detalhe-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.07);
+    padding: 48px 40px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.servico-detalhe-card h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    color: #2563eb;
+}
+
+.servico-detalhe-card .intro {
+    font-size: 1.15rem;
+    color: #374151;
+    margin-bottom: 22px;
+    line-height: 1.6;
+}
+
+.servico-beneficios {
+    text-align: left;
+    margin: 0 auto 28px auto;
+    max-width: 480px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.servico-beneficios li {
+    margin-bottom: 12px;
+    font-size: 1.08rem;
+    color: #374151;
+    padding-left: 1.2em;
+    position: relative;
+}
+.servico-beneficios li::before {
+    content: "✔";
+    color: #25D366;
+    position: absolute;
+    left: 0;
+    font-size: 1em;
+}
+
+.servico-cta {
+    margin-top: 24px;
+}
+
+.servico-cta .cta-desc {
+    margin-top: 10px;
+    color: #2563eb;
+    font-size: 1rem;
 }
