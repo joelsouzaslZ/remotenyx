@@ -56,27 +56,113 @@ nav a:hover {
     background: #e6f0fa;
 }
 
+.destaque-remote {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #f8fafc 60%, #e6f0fa 100%);
+    padding: 64px 0 32px 0;
+    gap: 32px;
+}
+
 .hero-content {
+    max-width: 540px;
+    width: 90%;
+    text-align: left;
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 6px 32px rgba(0,0,0,0.07);
     padding: 48px 40px;
-    max-width: 540px;
-    width: 90%;
-    text-align: center;
+    margin: 0 0 0 32px;
 }
 
-.hero-content h1, .hero-content h2 {
-    font-size: 2.2rem;
+.hero-content h1 {
+    font-size: 2.3rem;
     font-weight: 800;
     margin-bottom: 18px;
     color: #1a202c;
 }
 
-.hero-content p {
-    font-size: 1.15rem;
+.hero-lead {
+    font-size: 1.18rem;
     margin-bottom: 28px;
     color: #374151;
+}
+
+.sistemas-suportados {
+    margin-top: 28px;
+    font-size: 1.08rem;
+    color: #2563eb;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sistemas-suportados ul {
+    display: flex;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sistemas-suportados li img {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 2px 6px rgba(37,99,235,0.10));
+    transition: transform 0.15s;
+}
+
+.sistemas-suportados li img:hover {
+    transform: scale(1.12) rotate(-6deg);
+}
+
+.hero-ilustracao {
+    flex: 1 1 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-ilustracao img {
+    max-width: 340px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(37,99,235,0.08);
+}
+
+.beneficios-remote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    background: #fff;
+    padding: 36px 0 24px 0;
+}
+
+.beneficio-item {
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(37,99,235,0.06);
+    padding: 28px 22px;
+    max-width: 260px;
+    min-width: 200px;
+    text-align: center;
+    flex: 1 1 220px;
+}
+
+.beneficio-item h3 {
+    color: #2563eb;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.beneficio-item p {
+    color: #374151;
+    font-size: 1rem;
 }
 
 .cta {
