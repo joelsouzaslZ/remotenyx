@@ -223,78 +223,85 @@ footer {
     color: #1a202c;
 }
 
+.servicos-destaque {
+  margin: 48px 0 32px 0;
+  text-align: center;
+}
+
+.servicos-destaque h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #222;
+}
+
 .servicos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
 }
 
-.servico-item {
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 6px 32px rgba(0,0,0,0.07);
-    padding: 36px 28px 32px 28px;
-    max-width: 340px;
-    min-width: 260px;
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.15s, box-shadow 0.15s;
+.servico-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 32px 24px 24px 24px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.servico-item:hover {
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 12px 40px rgba(37,99,235,0.10);
+.servico-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,120,215,0.12);
 }
 
 .servico-icone {
-    margin-bottom: 18px;
+  font-size: 2.5rem;
+  margin-bottom: 16px;
 }
 
-.servico-item h2 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    color: #2563eb;
+.servico-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #0078d7;
 }
 
-.servico-item p {
-    font-size: 1.05rem;
-    color: #374151;
-    margin-bottom: 22px;
+.servico-card p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 18px;
 }
 
-.cta {
-    display: inline-block;
-    background: #25D366;
-    color: #fff;
-    font-weight: 600;
-    padding: 12px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background 0.2s;
+.btn-servico {
+  background: linear-gradient(90deg, #25d366 0%, #0078d7 100%);
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s;
 }
 
-.cta:hover:not(.disabled) {
-    background: #128c4b;
+.btn-servico:hover {
+  background: linear-gradient(90deg, #0078d7 0%, #25d366 100%);
 }
 
-.cta.disabled {
-    background: #cbd5e1;
-    color: #64748b;
-    cursor: not-allowed;
-    pointer-events: none;
+@media (max-width: 900px) {
+  .servicos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servico-card {
+    width: 90%;
+    max-width: 340px;
+  }
 }
-
-.breve {
-    font-size: 0.95em;
-    color: #f59e42;
-    font-weight: 600;
-}
-
 .sobre {
     padding: 64px 0 48px 0;
     background: #f8fafc;
