@@ -85,14 +85,12 @@ window.addEventListener('DOMContentLoaded', () => {
       <h2>${services[leftIdx].title}</h2>
       <p>${services[leftIdx].desc}</p>
       <a class="${services[leftIdx].btnClass}" href="contato.html">${services[leftIdx].btn}</a>
-      ${services[leftIdx].extra}
     `;
     // Card direito
     document.getElementById('right-card').innerHTML = `
       <h2>${services[rightIdx].title}</h2>
       <p>${services[rightIdx].desc}</p>
       <a class="${services[rightIdx].btnClass}" href="contato.html">${services[rightIdx].btn}</a>
-      ${services[rightIdx].extra}
     `;
   }
 
