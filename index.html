@@ -21,55 +21,14 @@
     </header>
 
     <main>
-        <section class="hero-primary destaque-remote">
-            <div class="hero-content">
-                <h1>Acesso Remoto Profissional para Empresas Modernas</h1>
-                <p class="hero-lead">
-                    Conecte-se aos seus computadores, servidores e sistemas de qualquer lugar do mundo, com máxima segurança, velocidade e simplicidade. 
-                    Gerencie equipes, preste suporte e mantenha sua operação ativa 24h, sem limites.
-                </p>
-                <a class="cta" href="contato.html">Quero acesso remoto agora</a>
-                <div class="sistemas-suportados">
-                    <span>Compatível com:</span>
-                    <ul>
-                        <li title="Windows">
-                            <img src="assets/icons/windows.svg" alt="Windows" />
-                        </li>
-                        <li title="macOS">
-                            <img src="assets/icons/macos.svg" alt="macOS" />
-                        </li>
-                        <li title="Linux">
-                            <img src="assets/icons/linux.svg" alt="Linux" />
-                        </li>
-                        <li title="Android">
-                            <img src="assets/icons/android.svg" alt="Android" />
-                        </li>
-                        <li title="iOS">
-                            <img src="assets/icons/ios.svg" alt="iOS" />
-                        </li>
-                        <li title="Raspberry Pi">
-                            <img src="assets/icons/raspberry.svg" alt="Raspberry Pi" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="hero-slider">
-          <div class="slider-container">
-            <button class="slider-btn prev" aria-label="Imagem anterior">&#10094;</button>
-            <div class="slider-images">
-              <img src="assets/slider/remote1.png" alt="Acesso remoto em ação" class="slider-img active">
-              <img src="assets/slider/remote2.png" alt="Dashboard de controle remoto" class="slider-img">
-              <img src="assets/slider/remote3.png" alt="Suporte remoto multiplataforma" class="slider-img">
-            </div>
-            <button class="slider-btn next" aria-label="Próxima imagem">&#10095;</button>
+        <section class="hero-carousel">
+          <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+          <div class="carousel-cards">
+            <div class="carousel-card side-card" id="left-card"></div>
+            <div class="carousel-card main-card" id="center-card"></div>
+            <div class="carousel-card side-card" id="right-card"></div>
           </div>
-          <div class="slider-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
+          <button class="carousel-btn next" aria-label="Próximo">&#10095;</button>
         </section>
 
         <section class="beneficios-remote">
