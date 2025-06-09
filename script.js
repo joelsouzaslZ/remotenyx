@@ -33,7 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
       btn: "Quero acesso remoto agora",
       btnClass: "cta",
       extra: `<div class="sistemas-suportadas">
-                <span>Compatível com:</span>
                 <ul>
                   <li title="Windows"><img src="assets/icons/windows.svg" alt="Windows" /></li>
                   <li title="macOS"><img src="assets/icons/macos.svg" alt="macOS" /></li>
